@@ -1,0 +1,12 @@
+services:
+database:
+image: postgres
+environment:
+  - POSGRES_DB = user_crud
+  - POSGRES_USER = danbril15
+  - POSGRES_PASSWORD = postgres
+ports:
+  - '5432:5432'
+volumes:
+postgresql-volume:
+external: true
