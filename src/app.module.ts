@@ -16,7 +16,7 @@ require('dotenv').config();
       password: process.env.DB_PASS,
       database: process.env.DB_NAME,
       entities: [User],
-      ssl: true,
+      // ssl: true,
       synchronize: true,
     }),
     UsersModule,
